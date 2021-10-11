@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://misc/videos/mony.webm" type="VideoStream" id=1]
+[ext_resource path="res://resources/screens/mony to buy a undertale.gd" type="Script" id=2]
+
+[node name="mony to buy a undertale" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="VideoPlayer" type="VideoPlayer" parent="."]
+margin_right = 256.0
+margin_bottom = 304.0
+stream = ExtResource( 1 )
+buffering_msec = 1000
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="finished" from="VideoPlayer" to="." method="_on_VideoPlayer_finished"]

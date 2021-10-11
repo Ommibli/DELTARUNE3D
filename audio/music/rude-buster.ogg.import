@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/rude-buster.ogg-8fa53e369618526d3dcef1aa786bdf82.oggstr"
+
+[deps]
+
+source_file="res://audio/music/rude-buster.ogg"
+dest_files=[ "res://.import/rude-buster.ogg-8fa53e369618526d3dcef1aa786bdf82.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

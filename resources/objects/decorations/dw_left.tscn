@@ -1,0 +1,69 @@
+[gd_scene load_steps=5 format=2]
+
+[sub_resource type="SpatialMaterial" id=4]
+flags_transparent = true
+albedo_color = Color( 1, 1, 1, 0 )
+
+[sub_resource type="CubeMesh" id=1]
+material = SubResource( 4 )
+size = Vector3( 4, 4, 4 )
+
+[sub_resource type="BoxShape" id=2]
+margin = 0.05
+extents = Vector3( 2, 2, 2 )
+
+[sub_resource type="StreamTexture" id=3]
+flags = 16
+load_path = "res://.import/bg_darktiles1_tileset.png-4e272bf762f45df6a97cfca12500c691.stex"
+
+[node name="dw_left" type="MeshInstance"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="dw_left" type="StaticBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0 )
+
+[node name="collision" type="CollisionShape" parent="dw_left"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0 )
+shape = SubResource( 2 )
+
+[node name="Sprite3D" type="Sprite3D" parent="dw_left"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6, 2 )
+pixel_size = 0.091
+shaded = true
+alpha_cut = 2
+texture = SubResource( 3 )
+hframes = 10
+vframes = 10
+frame = 20
+
+[node name="Sprite3D3" type="Sprite3D" parent="dw_left"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 2 )
+pixel_size = 0.091
+shaded = true
+alpha_cut = 2
+texture = SubResource( 3 )
+hframes = 10
+vframes = 10
+frame = 16
+
+[node name="Sprite3D4" type="Sprite3D" parent="dw_left"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0 )
+pixel_size = 0.091
+shaded = true
+alpha_cut = 2
+texture = SubResource( 3 )
+hframes = 10
+vframes = 10
+frame = 11
+
+[node name="Sprite3D2" type="Sprite3D" parent="dw_left"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10, 2 )
+pixel_size = 0.091
+shaded = true
+alpha_cut = 2
+texture = SubResource( 3 )
+hframes = 10
+vframes = 10
+frame = 21

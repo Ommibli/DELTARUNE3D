@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://graphics/textures/bg_darktiles1_tileset.png" type="Texture" id=2]
+
+[sub_resource type="BoxShape" id=2]
+margin = 0.05
+extents = Vector3( 2, 2, 2 )
+
+[sub_resource type="StreamTexture" id=4]
+flags = 16
+load_path = "res://.import/bg_darktiles1_tileset.png-4e272bf762f45df6a97cfca12500c691.stex"
+
+[sub_resource type="StreamTexture" id=5]
+flags = 16
+load_path = "res://.import/bg_darktiles1_tileset.png-4e272bf762f45df6a97cfca12500c691.stex"
+
+[sub_resource type="StreamTexture" id=3]
+flags = 16
+load_path = "res://.import/bg_darktiles1_tileset.png-4e272bf762f45df6a97cfca12500c691.stex"
+
+[node name="dw_middle" type="StaticBody"]
+
+[node name="collision" type="CollisionShape" parent="."]
+shape = SubResource( 2 )
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8, 2 )
+pixel_size = 0.095
+texture = ExtResource( 2 )
+hframes = 10
+vframes = 10
+frame = 4
+
+[node name="Sprite3D3" type="Sprite3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+pixel_size = 0.095
+texture = SubResource( 4 )
+hframes = 10
+vframes = 10
+frame = 17
+
+[node name="Sprite3D4" type="Sprite3D" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 2, 0 )
+pixel_size = 0.095
+texture = SubResource( 5 )
+hframes = 10
+vframes = 10
+frame = 12
+
+[node name="Sprite3D2" type="Sprite3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4, 2 )
+pixel_size = 0.095
+texture = SubResource( 3 )
+hframes = 10
+vframes = 10
+frame = 22

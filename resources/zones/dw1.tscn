@@ -1,0 +1,1071 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://resources/objects/player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://resources/objects/decorations/dw_middle.tscn" type="PackedScene" id=2]
+[ext_resource path="res://resources/objects/decorations/stairs.tscn" type="PackedScene" id=3]
+[ext_resource path="res://resources/objects/decorations/dw_middlemiddle.tscn" type="PackedScene" id=4]
+[ext_resource path="res://audio/music/april-2012.ogg" type="AudioStream" id=5]
+[ext_resource path="res://audio/music/cliffs.ogg" type="AudioStream" id=6]
+[ext_resource path="res://resources/objects/decorations/dw_cornercorner.tscn" type="PackedScene" id=7]
+[ext_resource path="res://resources/screens/mony to buy a undertale.tscn" type="PackedScene" id=8]
+[ext_resource path="res://resources/objects/decorations/dw_corner.tscn" type="PackedScene" id=9]
+[ext_resource path="res://audio/music/rude-buster.ogg" type="AudioStream" id=10]
+[ext_resource path="res://resources/objects/decorations/invisiblewall.tscn" type="PackedScene" id=11]
+[ext_resource path="res://resources/objects/decorations/dw_middlevar.tscn" type="PackedScene" id=12]
+[ext_resource path="res://resources/zones/dw1.gd" type="Script" id=13]
+[ext_resource path="res://graphics/sprites/endsign.png" type="Texture" id=14]
+
+[sub_resource type="ProceduralSky" id=1]
+radiance_size = 0
+sky_top_color = Color( 0.654902, 0.627451, 0.996078, 1 )
+sky_horizon_color = Color( 0.0313726, 0.00784314, 0.32549, 1 )
+sky_curve = 0.372695
+ground_bottom_color = Color( 0.0784314, 0.0509804, 0.235294, 1 )
+ground_horizon_color = Color( 1, 0.792157, 0.654902, 1 )
+sun_color = Color( 0.545098, 0.627451, 0.607843, 1 )
+sun_latitude = 8.97
+sun_longitude = 10.2
+sun_angle_min = 0.0
+sun_angle_max = 26.27
+sun_curve = 0.123114
+sun_energy = 0.56
+texture_size = 0
+
+[sub_resource type="Environment" id=2]
+background_mode = 1
+background_sky = SubResource( 1 )
+background_color = Color( 0.027451, 0.0196078, 0.117647, 1 )
+ambient_light_color = Color( 0.0862745, 0.12549, 0.215686, 1 )
+fog_enabled = true
+fog_color = Color( 0.14902, 0.117647, 0.352941, 1 )
+fog_sun_color = Color( 0.203922, 0.227451, 0.341176, 1 )
+fog_depth_end = 250.0
+fog_transmit_enabled = true
+fog_height_min = 4.0
+fog_height_max = 25.0
+fog_height_curve = 1.62451
+tonemap_mode = 3
+glow_bicubic_upscale = true
+
+[sub_resource type="ViewportTexture" id=3]
+viewport_path = NodePath("Viewport")
+
+[sub_resource type="BoxShape" id=4]
+extents = Vector3( 8, 8, 8 )
+
+[sub_resource type="BoxShape" id=5]
+extents = Vector3( 2, 2, 1 )
+
+[node name="dw1" type="Spatial"]
+script = ExtResource( 13 )
+
+[node name="dw_middlemiddle" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, 4, -172 )
+
+[node name="dw_middlemiddle6" parent="." instance=ExtResource( 4 )]
+
+[node name="dw_middlemiddle7" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -4 )
+
+[node name="dw_middlemiddle9" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4 )
+
+[node name="dw_middlemiddle10" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4 )
+
+[node name="dw_middlemiddle11" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4 )
+
+[node name="dw_middlemiddle17" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0 )
+
+[node name="dw_middlemiddle18" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -4 )
+
+[node name="dw_middlemiddle19" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -4 )
+
+[node name="dw_middlemiddle20" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0 )
+
+[node name="dw_middlemiddle12" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4 )
+
+[node name="dw_middlemiddle14" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4 )
+
+[node name="dw_middlemiddle13" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0 )
+
+[node name="dw_middlemiddle8" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 2 )
+
+[node name="dw_cornercorner" parent="." instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8, 0, 4 )
+
+[node name="dw_cornercorner2" parent="." instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, -1, 8, 0, 4 )
+
+[node name="dw_cornercorner3" parent="." instance=ExtResource( 7 )]
+transform = Transform( 7.35137e-08, 0, -1, 0, 1, 0, 1, 0, 7.35137e-08, 12, 0, -4 )
+
+[node name="dw_cornercorner4" parent="." instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, -1, 12, 0, 0 )
+
+[node name="dw_cornercorner5" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1.39091e-08, 0, 1, 0, 1, 0, -1, 0, 1.39091e-08, 44, 0, 0 )
+
+[node name="dw_cornercorner7" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1.39091e-08, 0, 1, 0, 1, 0, -1, 0, 1.39091e-08, 48, 0, 8 )
+
+[node name="dw_cornercorner8" parent="." instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, -1, 64, 0, 8 )
+
+[node name="dw_cornercorner6" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, -5.76205e-08, 0, 1, 0, 5.76205e-08, 0, 1, 44, 0, -4 )
+
+[node name="player" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 5 )
+
+[node name="SpotLight" type="SpotLight" parent="player"]
+transform = Transform( 1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 0, 9.5, 5 )
+light_energy = 2.5
+light_indirect_energy = 2.5
+shadow_enabled = true
+shadow_reverse_cull_face = true
+spot_range = 17.0
+spot_angle = 31.0425
+
+[node name="stairs" parent="." instance=ExtResource( 3 )]
+transform = Transform( -5.96046e-08, 0, 1, 0, 1, 0, -1, 0, -5.96046e-08, 166, 2, -164 )
+
+[node name="stairs3" parent="." instance=ExtResource( 3 )]
+transform = Transform( -5.96046e-08, 0, 1, 0, 1, 0, -1, 0, -5.96046e-08, 158, 2, -164 )
+
+[node name="stairs2" parent="." instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 162, 2, -164 )
+
+[node name="dw_middle6" parent="." instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -8 )
+
+[node name="dw_middle14" parent="." instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8, 0, -8 )
+
+[node name="dw_middle15" parent="." instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8, 0, -8 )
+
+[node name="dw_middle7" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 4, 0, 8 )
+
+[node name="dw_middle10" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -4, 0, 8 )
+
+[node name="dw_middle2" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, 4, -168 )
+
+[node name="dw_middle3" parent="." instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 166, 4, -172 )
+
+[node name="dw_middle5" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, 16, 0, 0 )
+
+[node name="dw_middle11" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -12, 0, 0 )
+
+[node name="dw_corner" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 166, 4, -168 )
+
+[node name="dw_middle4" parent="." instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 162, 4, -192 )
+
+[node name="dw_corner5" parent="." instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 166, 4, -192 )
+
+[node name="dw_middlemiddle2" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, 4, -176 )
+
+[node name="dw_middle8" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 158, 4, -176 )
+
+[node name="dw_middlemiddle3" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, 4, -180 )
+
+[node name="dw_middle9" parent="." instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 166, 4, -180 )
+
+[node name="dw_middlemiddle4" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, 4, -184 )
+
+[node name="dw_middle12" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 158, 4, -184 )
+
+[node name="dw_middlemiddle5" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, 4, -188 )
+
+[node name="dw_middle13" parent="." instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 166, 4, -188 )
+
+[node name="dw_corner6" parent="." instance=ExtResource( 9 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 158, 4, -192 )
+
+[node name="dw_corner2" parent="." instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 158, 4, -168 )
+
+[node name="dw_corner3" parent="." instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -12, 0, 4 )
+
+[node name="dw_corner10" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, 12, 0, 4 )
+
+[node name="dw_corner9" parent="." instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8, 0, 8 )
+
+[node name="dw_corner4" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 8 )
+
+[node name="dw_corner7" parent="." instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12, 0, -8 )
+
+[node name="dw_corner8" parent="." instance=ExtResource( 9 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -12, 0, -8 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Sprite" type="Sprite" parent="CanvasLayer"]
+
+[node name="Viewport" type="Viewport" parent="."]
+size = Vector2( 256, 304 )
+size_override_stretch = true
+transparent_bg = true
+render_target_v_flip = true
+
+[node name="mony to buy a undertale" parent="Viewport" instance=ExtResource( 8 )]
+
+[node name="april2012" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+
+[node name="cliffs" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+autoplay = true
+
+[node name="rudebuster" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+
+[node name="dw_middlevarient7" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8 )
+
+[node name="dw_middlevarient11" parent="." instance=ExtResource( 12 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 16, 0, -4 )
+
+[node name="dw_middle16" parent="." instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 20, 0, -4 )
+
+[node name="dw_middlevarient13" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 20, 0, 0 )
+
+[node name="dw_middle17" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, 24, 0, 0 )
+
+[node name="dw_middlevarient14" parent="." instance=ExtResource( 12 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 24, 0, -4 )
+
+[node name="dw_middle18" parent="." instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 28, 0, -4 )
+
+[node name="dw_middlevarient15" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 28, 0, 0 )
+
+[node name="dw_middle19" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, 32, 0, 0 )
+
+[node name="dw_middlevarient16" parent="." instance=ExtResource( 12 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 32, 0, -4 )
+
+[node name="dw_middlevarient19" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 52, 0, 12 )
+
+[node name="dw_middlevarient21" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 60, 0, 12 )
+
+[node name="dw_middlevarient24" parent="." instance=ExtResource( 12 )]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 68, 0, -8 )
+
+[node name="dw_corner11" parent="." instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, 8 )
+
+[node name="dw_corner14" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 68, 0, 8 )
+
+[node name="dw_corner12" parent="." instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 48, 0, 12 )
+
+[node name="dw_corner13" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 64, 0, 12 )
+
+[node name="dw_middle20" parent="." instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 36, 0, -4 )
+
+[node name="dw_middlevarient17" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 36, 0, 0 )
+
+[node name="dw_middle21" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, 40, 0, 0 )
+
+[node name="dw_middle22" parent="." instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 44, 0, 4 )
+
+[node name="dw_middle25" parent="." instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 68, 0, 4 )
+
+[node name="dw_middle24" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, 56, 0, 12 )
+
+[node name="dw_cornercorner9" parent="." instance=ExtResource( 7 )]
+transform = Transform( 7.35137e-08, 0, -1, 0, 1, 0, 1, 0, 7.35137e-08, 64, 0, -12 )
+
+[node name="dw_cornercorner10" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 1.17225e-07, 0, 1, 0, -1.17225e-07, 0, 1, 48, 0, -12 )
+
+[node name="dw_middlevarient20" parent="." instance=ExtResource( 12 )]
+transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 60, 0, -16 )
+
+[node name="dw_middlevarient22" parent="." instance=ExtResource( 12 )]
+transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 52, 0, -16 )
+
+[node name="dw_corner15" parent="." instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 68, 0, -12 )
+
+[node name="dw_corner16" parent="." instance=ExtResource( 9 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 44, 0, -12 )
+
+[node name="dw_corner17" parent="." instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 64, 0, -16 )
+
+[node name="dw_corner18" parent="." instance=ExtResource( 9 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 48, 0, -16 )
+
+[node name="dw_middle26" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 44, 0, -8 )
+
+[node name="dw_middle27" parent="." instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 56, 0, -16 )
+
+[node name="dw_middlevarient18" parent="." instance=ExtResource( 12 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 40, 0, -4 )
+
+[node name="dw_cornercorner11" parent="." instance=ExtResource( 7 )]
+transform = Transform( 7.35137e-08, 0, -1, 0, 1, 0, 1, 0, 7.35137e-08, 68, 0, -4 )
+
+[node name="dw_cornercorner12" parent="." instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, -1, 68, 0, 0 )
+
+[node name="dw_middle23" parent="." instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 72, 0, -4 )
+
+[node name="dw_middlevarient23" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 72, 0, 0 )
+
+[node name="dw_middle30" parent="." instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 80, 0, -4 )
+
+[node name="dw_middlevarient27" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 80, 0, 0 )
+
+[node name="dw_middle28" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 76, 0, 0 )
+
+[node name="dw_middlevarient25" parent="." instance=ExtResource( 12 )]
+transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 76, 0, -4 )
+
+[node name="dw_middle29" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 84, 0, 0 )
+
+[node name="dw_middlevarient26" parent="." instance=ExtResource( 12 )]
+transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 84, 0, -4 )
+
+[node name="dw_middle31" parent="." instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 88, 0, -4 )
+
+[node name="dw_middlevarient28" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 88, 0, 0 )
+
+[node name="dw_middle32" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 92, 0, 0 )
+
+[node name="dw_middlevarient29" parent="." instance=ExtResource( 12 )]
+transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 92, 0, -4 )
+
+[node name="dw_middle33" parent="." instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 96, 0, -4 )
+
+[node name="dw_middlevarient30" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 96, 0, 0 )
+
+[node name="dw_middle34" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 100, 0, 0 )
+
+[node name="dw_middlevarient31" parent="." instance=ExtResource( 12 )]
+transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 100, 0, -4 )
+
+[node name="dw_middle35" parent="." instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 104, 0, -4 )
+
+[node name="dw_middlevarient32" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 104, 0, 0 )
+
+[node name="dw_middle36" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 108, 0, 0 )
+
+[node name="dw_middle43" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 128, 0, 16 )
+
+[node name="dw_middlevarient33" parent="." instance=ExtResource( 12 )]
+transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 108, 0, -4 )
+
+[node name="dw_middle37" parent="." instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 112, 0, -4 )
+
+[node name="dw_middle39" parent="." instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 120, 0, -4 )
+
+[node name="dw_middlevarient34" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 112, 0, 0 )
+
+[node name="dw_middlevarient36" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 120, 0, 4 )
+
+[node name="dw_middlevarient38" parent="." instance=ExtResource( 12 )]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 124, 0, 4 )
+
+[node name="dw_middle38" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 116, 0, 0 )
+
+[node name="dw_middle40" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 120, 0, 8 )
+
+[node name="dw_middlevarient37" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 120, 0, 12 )
+
+[node name="dw_middle41" parent="." instance=ExtResource( 2 )]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 124, 0, 0 )
+
+[node name="dw_middle42" parent="." instance=ExtResource( 2 )]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 124, 0, 8 )
+
+[node name="dw_middlevarient39" parent="." instance=ExtResource( 12 )]
+transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 128, 0, 12 )
+
+[node name="dw_middlevarient40" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 3.49691e-07, 0, 1, 0, -3.49691e-07, 0, 1, 124, 0, 16 )
+
+[node name="dw_middle44" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 140, 0, 16 )
+
+[node name="dw_middle45" parent="." instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 132, 0, 12 )
+
+[node name="dw_middlevarient41" parent="." instance=ExtResource( 12 )]
+transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 140, 0, 12 )
+
+[node name="dw_middlevarient42" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 3.49691e-07, 0, 1, 0, -3.49691e-07, 0, 1, 132, 0, 16 )
+
+[node name="dw_middle46" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 148, 0, 16 )
+
+[node name="dw_middle47" parent="." instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 144, 0, 12 )
+
+[node name="dw_middlevarient43" parent="." instance=ExtResource( 12 )]
+transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 148, 0, 12 )
+
+[node name="dw_middlevarient44" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 3.49691e-07, 0, 1, 0, -3.49691e-07, 0, 1, 144, 0, 16 )
+
+[node name="dw_middle52" parent="." instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 136, 0, 12 )
+
+[node name="dw_middlevarient49" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 3.49691e-07, 0, 1, 0, -3.49691e-07, 0, 1, 136, 0, 16 )
+
+[node name="dw_middle48" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 156, 0, 16 )
+
+[node name="dw_middle49" parent="." instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 152, 0, 12 )
+
+[node name="dw_middlevarient45" parent="." instance=ExtResource( 12 )]
+transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 156, 0, 12 )
+
+[node name="dw_middlevarient46" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 3.49691e-07, 0, 1, 0, -3.49691e-07, 0, 1, 152, 0, 16 )
+
+[node name="dw_middle50" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 164, 0, 16 )
+
+[node name="dw_middle51" parent="." instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 160, 0, 12 )
+
+[node name="dw_middlevarient47" parent="." instance=ExtResource( 12 )]
+transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 164, 0, 12 )
+
+[node name="dw_middlevarient48" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 3.49691e-07, 0, 1, 0, -3.49691e-07, 0, 1, 160, 0, 16 )
+
+[node name="dw_middle53" parent="." instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 168, 0, 12 )
+
+[node name="dw_middlevarient50" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 3.49691e-07, 0, 1, 0, -3.49691e-07, 0, 1, 168, 0, 16 )
+
+[node name="dw_corner19" parent="." instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 124, 0, -4 )
+
+[node name="dw_corner21" parent="." instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 172, 0, 12 )
+
+[node name="dw_corner22" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, 172, 0, 16 )
+
+[node name="dw_corner20" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 120, 0, 16 )
+
+[node name="dw_middlevarient35" parent="." instance=ExtResource( 12 )]
+transform = Transform( -1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 116, 0, -4 )
+
+[node name="dw_middlevarient2" parent="." instance=ExtResource( 12 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 166, 4, -176 )
+
+[node name="dw_middlevarient3" parent="." instance=ExtResource( 12 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 166, 4, -184 )
+
+[node name="dw_middlemiddle15" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 0, 4 )
+
+[node name="dw_middlemiddle16" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 52, 0, 4 )
+
+[node name="dw_middlemiddle21" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 52, 0, 8 )
+
+[node name="dw_middlemiddle22" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 8 )
+
+[node name="dw_middlemiddle23" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 8 )
+
+[node name="dw_middlemiddle24" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 4 )
+
+[node name="dw_cornercorner13" parent="." instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 120, 0, 0 )
+
+[node name="dw_cornercorner14" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 124, 0, 12 )
+
+[node name="dw_middlemiddle25" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 64, 0, 4 )
+
+[node name="dw_middlemiddle26" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 4 )
+
+[node name="dw_middlemiddle27" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, 0 )
+
+[node name="dw_middlemiddle28" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 0 )
+
+[node name="dw_middlemiddle29" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 64, 0, 0 )
+
+[node name="dw_middlemiddle30" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 52, 0, 0 )
+
+[node name="dw_middlemiddle31" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 0, 0 )
+
+[node name="dw_middlemiddle32" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 0, -4 )
+
+[node name="dw_middlemiddle33" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 52, 0, -4 )
+
+[node name="dw_middlemiddle34" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, -4 )
+
+[node name="dw_middlemiddle35" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, -4 )
+
+[node name="dw_middlemiddle36" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 64, 0, -4 )
+
+[node name="dw_middlemiddle37" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 64, 0, -8 )
+
+[node name="dw_middlemiddle38" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, -8 )
+
+[node name="dw_middlemiddle39" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 0, -8 )
+
+[node name="dw_middlemiddle40" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 52, 0, -8 )
+
+[node name="dw_middlemiddle41" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, -8 )
+
+[node name="dw_middlemiddle42" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 0, -12 )
+
+[node name="dw_middlemiddle43" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 52, 0, -12 )
+
+[node name="dw_middlemiddle44" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, -12 )
+
+[node name="dw_middlevarient4" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 158, 4, -180 )
+
+[node name="dw_middlevarient5" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 158, 4, -172 )
+
+[node name="dw_middlevarient8" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -12, 0, -4 )
+
+[node name="dw_middlevarient9" parent="." instance=ExtResource( 12 )]
+transform = Transform( -1, 0, -8.74226e-08, 0, 1, 0, 8.74226e-08, 0, -1, -4, 0, -8 )
+
+[node name="dw_middlevarient12" parent="." instance=ExtResource( 12 )]
+transform = Transform( -1, 0, -8.74226e-08, 0, 1, 0, 8.74226e-08, 0, -1, 4, 0, -8 )
+
+[node name="dw_middlevarient6" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 158, 4, -188 )
+
+[node name="invisiblewall" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, -4, -18 )
+
+[node name="invisiblewall43" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 178, 4, 14 )
+
+[node name="invisiblewall130" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 170, 4, 22 )
+
+[node name="invisiblewall44" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, 4, 22 )
+
+[node name="invisiblewall45" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 154, 4, 22 )
+
+[node name="invisiblewall46" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 146, 4, 22 )
+
+[node name="invisiblewall47" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 138, 4, 22 )
+
+[node name="invisiblewall48" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 130, 4, 22 )
+
+[node name="invisiblewall49" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 122, 4, 22 )
+
+[node name="invisiblewall51" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 114, 4, 14 )
+
+[node name="invisiblewall52" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 114, 4, 6 )
+
+[node name="invisiblewall53" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 106, 4, 6 )
+
+[node name="invisiblewall54" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 98, 4, 6 )
+
+[node name="invisiblewall55" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 4, 6 )
+
+[node name="invisiblewall56" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 82, 4, 6 )
+
+[node name="invisiblewall88" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 98, 4, -10 )
+
+[node name="invisiblewall89" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 4, -10 )
+
+[node name="invisiblewall90" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 82, 4, -10 )
+
+[node name="invisiblewall91" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 122, 4, -10 )
+
+[node name="invisiblewall92" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 114, 4, -10 )
+
+[node name="invisiblewall93" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 106, 4, -10 )
+
+[node name="invisiblewall94" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 146, 4, 6 )
+
+[node name="invisiblewall95" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 138, 4, 6 )
+
+[node name="invisiblewall96" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 130, 4, 6 )
+
+[node name="invisiblewall97" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 130, 4, -2 )
+
+[node name="invisiblewall57" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 74, 4, 6 )
+
+[node name="invisiblewall58" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 70, 4, 14 )
+
+[node name="invisiblewall59" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 64, 4, 18 )
+
+[node name="invisiblewall60" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 4, 18 )
+
+[node name="invisiblewall61" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 4, 18 )
+
+[node name="invisiblewall62" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 4, 14 )
+
+[node name="invisiblewall63" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 4, 6 )
+
+[node name="invisiblewall64" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 4, 6 )
+
+[node name="invisiblewall65" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 4, 6 )
+
+[node name="invisiblewall66" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 4, 6 )
+
+[node name="invisiblewall67" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 4, 10 )
+
+[node name="invisiblewall68" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 4, 14 )
+
+[node name="invisiblewall69" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 4, 14 )
+
+[node name="invisiblewall70" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 4, 14 )
+
+[node name="invisiblewall71" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 4, 10 )
+
+[node name="invisiblewall72" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 4, 2 )
+
+[node name="invisiblewall73" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 4, -6 )
+
+[node name="invisiblewall74" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 4, -14 )
+
+[node name="invisiblewall75" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 4, -14 )
+
+[node name="invisiblewall76" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 4, -14 )
+
+[node name="invisiblewall77" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 4, -14 )
+
+[node name="invisiblewall78" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 4, -10 )
+
+[node name="invisiblewall79" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 4, -10 )
+
+[node name="invisiblewall80" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 4, -10 )
+
+[node name="invisiblewall81" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 4, -10 )
+
+[node name="invisiblewall82" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 4, -18 )
+
+[node name="invisiblewall83" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 4, -22 )
+
+[node name="invisiblewall84" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 4, -22 )
+
+[node name="invisiblewall85" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 62, 4, -22 )
+
+[node name="invisiblewall86" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 70, 4, -18 )
+
+[node name="invisiblewall87" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 74, 4, -10 )
+
+[node name="invisiblewall12" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, -4, -10 )
+
+[node name="invisiblewall13" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, -4, -2 )
+
+[node name="invisiblewall14" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, -4, 6 )
+
+[node name="invisiblewall2" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, -4, -26 )
+
+[node name="invisiblewall3" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, -4, -34 )
+
+[node name="invisiblewall4" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, -4, -42 )
+
+[node name="invisiblewall5" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, -4, -50 )
+
+[node name="invisiblewall6" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, -4, -58 )
+
+[node name="invisiblewall7" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, -4, -130 )
+
+[node name="invisiblewall8" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, -4, -138 )
+
+[node name="invisiblewall9" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, -4, -146 )
+
+[node name="invisiblewall10" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, -4, -154 )
+
+[node name="invisiblewall11" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, -4, -162 )
+
+[node name="invisiblewall15" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 170, 4, -18 )
+
+[node name="invisiblewall16" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 170, 4, -10 )
+
+[node name="invisiblewall17" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 170, 4, -2 )
+
+[node name="invisiblewall18" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 170, 4, 6 )
+
+[node name="invisiblewall19" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 170, 4, -26 )
+
+[node name="invisiblewall20" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 170, 4, -34 )
+
+[node name="invisiblewall21" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 170, 4, -42 )
+
+[node name="invisiblewall22" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 170, 4, -50 )
+
+[node name="invisiblewall23" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 170, 4, -58 )
+
+[node name="invisiblewall24" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 170, 4, -130 )
+
+[node name="invisiblewall25" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 170, 4, -138 )
+
+[node name="invisiblewall26" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 170, 4, -146 )
+
+[node name="invisiblewall27" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 170, 4, -154 )
+
+[node name="invisiblewall28" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 170, 4, -162 )
+
+[node name="invisiblewall29" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 154, 4, -18 )
+
+[node name="invisiblewall30" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 154, 4, -10 )
+
+[node name="invisiblewall31" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 154, 4, -2 )
+
+[node name="invisiblewall32" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 154, 4, 6 )
+
+[node name="invisiblewall33" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 154, 4, -26 )
+
+[node name="invisiblewall34" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 154, 4, -34 )
+
+[node name="invisiblewall35" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 154, 4, -42 )
+
+[node name="invisiblewall36" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 154, 4, -50 )
+
+[node name="invisiblewall37" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 154, 4, -58 )
+
+[node name="invisiblewall38" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 154, 4, -130 )
+
+[node name="invisiblewall39" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 154, 4, -138 )
+
+[node name="invisiblewall106" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, -4, -114 )
+
+[node name="invisiblewall107" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, -4, -122 )
+
+[node name="invisiblewall108" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 170, 4, -114 )
+
+[node name="invisiblewall109" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 170, 4, -122 )
+
+[node name="invisiblewall110" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 154, 4, -114 )
+
+[node name="invisiblewall111" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 154, 4, -122 )
+
+[node name="invisiblewall112" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, -4, -98 )
+
+[node name="invisiblewall113" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, -4, -106 )
+
+[node name="invisiblewall114" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 170, 4, -98 )
+
+[node name="invisiblewall115" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 170, 4, -106 )
+
+[node name="invisiblewall116" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 154, 4, -98 )
+
+[node name="invisiblewall117" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 154, 4, -106 )
+
+[node name="invisiblewall118" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, -4, -82 )
+
+[node name="invisiblewall119" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, -4, -90 )
+
+[node name="invisiblewall120" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 170, 4, -82 )
+
+[node name="invisiblewall121" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 170, 4, -90 )
+
+[node name="invisiblewall122" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 154, 4, -82 )
+
+[node name="invisiblewall123" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 154, 4, -90 )
+
+[node name="invisiblewall124" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, -4, -66 )
+
+[node name="invisiblewall125" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, -4, -74 )
+
+[node name="invisiblewall126" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 170, 4, -66 )
+
+[node name="invisiblewall127" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 170, 4, -74 )
+
+[node name="invisiblewall128" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 154, 4, -66 )
+
+[node name="invisiblewall129" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 154, 4, -74 )
+
+[node name="invisiblewall40" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 154, 4, -146 )
+
+[node name="invisiblewall41" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 154, 4, -154 )
+
+[node name="invisiblewall50" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 154, 13, -170 )
+
+[node name="invisiblewall98" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 170, 13, -170 )
+
+[node name="invisiblewall99" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 170, 13, -178 )
+
+[node name="invisiblewall100" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 170, 13, -186 )
+
+[node name="invisiblewall101" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 170, 13, -194 )
+
+[node name="invisiblewall102" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 154, 13, -194 )
+
+[node name="invisiblewall105" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, 13, -194 )
+
+[node name="invisiblewall103" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 154, 13, -186 )
+
+[node name="invisiblewall104" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 154, 13, -178 )
+
+[node name="invisiblewall42" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 154, 4, -162 )
+
+[node name="mony" type="Sprite3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162, 20, -199 )
+pixel_size = 0.1
+shaded = true
+alpha_cut = 2
+texture = SubResource( 3 )
+
+[node name="Area" type="Area" parent="mony"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8, 14 )
+
+[node name="CollisionShape" type="CollisionShape" parent="mony/Area"]
+shape = SubResource( 4 )
+
+[node name="SpotLight" type="SpotLight" parent="mony"]
+transform = Transform( 1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 19, 22 )
+light_energy = 2.5
+light_indirect_energy = 2.5
+spot_range = 35.0
+spot_angle = 30.4019
+
+[node name="sign" type="Sprite3D" parent="."]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 170, 2, 14 )
+pixel_size = 0.091
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 14 )
+
+[node name="StaticBody" type="StaticBody" parent="sign"]
+
+[node name="CollisionShape" type="CollisionShape" parent="sign/StaticBody"]
+shape = SubResource( 5 )
+
+[connection signal="talkedboof" from="player" to="." method="_on_player_talkedboof"]
+[connection signal="area_entered" from="mony/Area" to="." method="_on_Area_area_entered"]
+[connection signal="area_exited" from="mony/Area" to="." method="_on_Area_area_exited"]

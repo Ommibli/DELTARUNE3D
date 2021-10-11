@@ -1,0 +1,174 @@
+[gd_scene load_steps=5 format=2]
+
+[sub_resource type="BoxShape" id=1]
+margin = 0.05
+extents = Vector3( 2, 2, 2 )
+
+[sub_resource type="StreamTexture" id=2]
+flags = 16
+load_path = "res://.import/bg_darktiles1_tileset.png-4e272bf762f45df6a97cfca12500c691.stex"
+
+[sub_resource type="StreamTexture" id=3]
+flags = 16
+load_path = "res://.import/bg_darktiles1_tileset.png-4e272bf762f45df6a97cfca12500c691.stex"
+
+[sub_resource type="StreamTexture" id=4]
+flags = 16
+load_path = "res://.import/bg_darktiles1_tileset.png-4e272bf762f45df6a97cfca12500c691.stex"
+
+[node name="dw_corner" type="StaticBody"]
+
+[node name="collision" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0 )
+shape = SubResource( 1 )
+
+[node name="collision2" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6, 0 )
+shape = SubResource( 1 )
+
+[node name="collision3" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10, 0 )
+shape = SubResource( 1 )
+
+[node name="collision4" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -14, 0 )
+shape = SubResource( 1 )
+
+[node name="collision5" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -18, 0 )
+shape = SubResource( 1 )
+
+[node name="collision6" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22, 0 )
+shape = SubResource( 1 )
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -14, 2 )
+pixel_size = 0.091
+shaded = true
+alpha_cut = 2
+texture = SubResource( 2 )
+hframes = 10
+vframes = 10
+frame = 25
+
+[node name="Sprite3D3" type="Sprite3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 2 )
+pixel_size = 0.091
+shaded = true
+alpha_cut = 2
+texture = SubResource( 2 )
+hframes = 10
+vframes = 10
+frame = 18
+
+[node name="Sprite3D4" type="Sprite3D" parent="."]
+transform = Transform( -4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 0, 0, 0 )
+pixel_size = 0.091
+shaded = true
+alpha_cut = 2
+texture = SubResource( 2 )
+hframes = 10
+vframes = 10
+frame = 3
+
+[node name="Sprite3D2" type="Sprite3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6, 2 )
+pixel_size = 0.091
+shaded = true
+alpha_cut = 2
+texture = SubResource( 2 )
+hframes = 10
+vframes = 10
+frame = 23
+
+[node name="Sprite3D8" type="Sprite3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10, 2 )
+pixel_size = 0.091
+shaded = true
+alpha_cut = 2
+texture = SubResource( 2 )
+hframes = 10
+vframes = 10
+frame = 23
+
+[node name="Sprite3D5" type="Sprite3D" parent="."]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, -6, 0 )
+pixel_size = 0.091
+shaded = true
+alpha_cut = 2
+texture = SubResource( 3 )
+hframes = 10
+vframes = 10
+frame = 20
+
+[node name="Sprite3D6" type="Sprite3D" parent="."]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, -2, 0 )
+pixel_size = 0.091
+shaded = true
+alpha_cut = 2
+texture = SubResource( 3 )
+hframes = 10
+vframes = 10
+frame = 16
+
+[node name="Sprite3D7" type="Sprite3D" parent="."]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, -10, 0 )
+pixel_size = 0.091
+shaded = true
+alpha_cut = 2
+texture = SubResource( 3 )
+hframes = 10
+vframes = 10
+frame = 21
+
+[node name="Sprite3D9" type="Sprite3D" parent="."]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, -14, 0 )
+pixel_size = 0.091
+shaded = true
+alpha_cut = 2
+texture = SubResource( 3 )
+hframes = 10
+vframes = 10
+frame = 21
+
+[node name="Sprite3D10" type="Sprite3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -18, 2 )
+pixel_size = 0.091
+shaded = true
+alpha_cut = 2
+texture = SubResource( 4 )
+hframes = 10
+vframes = 10
+frame = 23
+
+[node name="Sprite3D11" type="Sprite3D" parent="."]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, -18, 0 )
+pixel_size = 0.091
+shaded = true
+alpha_cut = 2
+texture = SubResource( 4 )
+hframes = 10
+vframes = 10
+frame = 19
+
+[node name="Sprite3D12" type="Sprite3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -22, 2 )
+flip_h = true
+pixel_size = 0.091
+shaded = true
+alpha_cut = 2
+texture = SubResource( 4 )
+hframes = 10
+vframes = 10
+frame = 19
+
+[node name="Sprite3D13" type="Sprite3D" parent="."]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, -22, 0 )
+pixel_size = 0.091
+shaded = true
+alpha_cut = 2
+texture = SubResource( 4 )
+hframes = 10
+vframes = 10
+frame = 21

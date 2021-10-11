@@ -1,0 +1,1694 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://graphics/sprites/basictiles.png" type="Texture" id=1]
+[ext_resource path="res://graphics/textures/bg_darktiles1_tileset.png" type="Texture" id=2]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 2.75, 0.025, 2 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 1, 0.025, 2 )
+
+[node name="stairs" type="StaticBody"]
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 0.707107, -0.707107, 0, 0.707107, 0.707107, 0, 0, 0, 1, 0, 0, 0 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="."]
+transform = Transform( 0.766045, -0.642788, 0, 0.642788, 0.766045, 0, 0, 0, 1, -2, -1.5, 0 )
+shape = SubResource( 2 )
+
+[node name="spritecontainer" type="Spatial" parent="."]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -0.5, -1.5, 0.5 )
+visible = false
+
+[node name="Sprite3D" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D2" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 4, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D3" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D4" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D5" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D6" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 8, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D16" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 8, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D17" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2, 4, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D18" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6, 0, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D10" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D11" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 4, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D12" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D13" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D19" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, -4, 2, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D20" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, 0, 6, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D21" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, 4, 10, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D14" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D15" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 8, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D7" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6, 4, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D8" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6, 0, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D9" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6, 8, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D22" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 8, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D23" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 8, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D24" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, 8, 10, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D25" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 8, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D26" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 8, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D27" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D28" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 0, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D29" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, 8, 2, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D30" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D31" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 0, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D32" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 4, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D33" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 4, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D34" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, 8, 6, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D35" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 4, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D36" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 4, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D37" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 12, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D38" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 12, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D39" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, 8, 14, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D40" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 12, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D41" type="Sprite3D" parent="spritecontainer"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 12, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="spritecontainer2" type="Spatial" parent="."]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -0.5, -1.5, 1.5 )
+visible = false
+
+[node name="Sprite3D" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D2" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 4, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D3" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D4" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D5" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D6" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 8, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D16" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 8, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D17" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2, 4, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D18" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6, 0, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D10" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D11" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 4, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D12" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D13" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D19" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, -4, 2, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D20" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, 0, 6, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D21" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, 4, 10, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D14" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D15" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 8, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D7" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6, 4, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D8" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6, 0, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D9" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6, 8, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D22" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 8, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D23" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 8, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D24" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, 8, 10, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D25" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 8, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D26" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 8, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D27" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D28" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 0, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D29" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, 8, 2, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D30" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D31" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 0, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D32" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 4, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D33" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 4, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D34" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, 8, 6, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D35" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 4, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D36" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 4, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D37" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 12, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D38" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 12, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D39" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, 8, 14, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D40" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 12, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D41" type="Sprite3D" parent="spritecontainer2"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 12, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="spritecontainer3" type="Spatial" parent="."]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -0.5, -1.5, -1.5 )
+visible = false
+
+[node name="Sprite3D" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D2" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 4, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D3" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D4" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D5" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D6" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 8, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D16" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 8, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D17" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2, 4, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D18" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6, 0, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D10" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D11" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 4, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D12" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D13" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D19" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, -4, 2, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D20" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, 0, 6, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D21" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, 4, 10, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D14" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D15" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 8, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D7" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6, 4, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D8" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6, 0, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D9" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6, 8, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D22" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 8, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D23" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 8, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D24" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, 8, 10, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D25" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 8, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D26" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 8, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D27" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D28" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 0, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D29" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, 8, 2, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D30" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D31" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 0, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D32" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 4, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D33" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 4, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D34" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, 8, 6, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D35" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 4, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D36" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 4, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D37" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 12, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D38" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 12, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D39" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, 8, 14, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D40" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 12, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D41" type="Sprite3D" parent="spritecontainer3"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 12, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="spritecontainer4" type="Spatial" parent="."]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -0.5, -1.5, -0.5 )
+visible = false
+
+[node name="Sprite3D" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D2" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 4, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D3" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D4" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D5" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D6" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 8, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D16" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 8, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D17" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2, 4, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D18" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6, 0, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D10" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D11" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 4, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D12" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D13" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D19" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, -4, 2, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D20" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, 0, 6, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D21" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, 4, 10, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D14" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D15" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 8, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D7" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6, 4, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D8" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6, 0, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D9" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6, 8, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D22" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 8, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D23" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 8, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D24" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, 8, 10, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D25" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 8, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D26" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 8, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D27" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D28" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 0, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D29" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, 8, 2, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D30" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D31" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 0, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D32" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 4, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D33" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 4, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D34" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, 8, 6, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D35" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 4, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D36" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 4, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D37" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 12, 2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D38" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6, 12, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D39" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( 1.91069e-15, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, 8, 14, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D40" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 12, -2 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D41" type="Sprite3D" parent="spritecontainer4"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 12, 0 )
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 15
+frame = 3
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform( -1.28028e-08, 0.707107, -0.707107, 3.09086e-08, 0.707107, 0.707107, 1, -1.28028e-08, -3.09086e-08, 0.8, 0.8, 0 )
+pixel_size = 0.095
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 2 )
+hframes = 10
+vframes = 10
+
+[node name="Sprite3D3" type="Sprite3D" parent="."]
+transform = Transform( -1.28028e-08, 0.707107, -0.707107, 3.09086e-08, 0.707107, 0.707107, 1, -1.28028e-08, -3.09086e-08, -1.9, -1.9, 0 )
+pixel_size = 0.095
+shaded = true
+alpha_cut = 2
+texture = ExtResource( 2 )
+hframes = 10
+vframes = 10

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/april-2012.ogg-1df7e7f565ede2343e8f69241f1111a3.oggstr"
+
+[deps]
+
+source_file="res://audio/music/april-2012.ogg"
+dest_files=[ "res://.import/april-2012.ogg-1df7e7f565ede2343e8f69241f1111a3.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,208 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://resources/objects/player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://resources/objects/decorations/dw_middle.tscn" type="PackedScene" id=2]
+[ext_resource path="res://resources/objects/decorations/stairs.tscn" type="PackedScene" id=3]
+[ext_resource path="res://resources/objects/decorations/dw_middlemiddle.tscn" type="PackedScene" id=4]
+[ext_resource path="res://audio/music/april-2012.ogg" type="AudioStream" id=5]
+[ext_resource path="res://resources/objects/decorations/angelspamton.tscn" type="PackedScene" id=6]
+[ext_resource path="res://resources/objects/decorations/ralseiexplode.tscn" type="PackedScene" id=7]
+[ext_resource path="res://resources/objects/decorations/invisiblewall.tscn" type="PackedScene" id=8]
+[ext_resource path="res://resources/objects/decorations/dw_corner.tscn" type="PackedScene" id=9]
+[ext_resource path="res://audio/music/rude-buster.ogg" type="AudioStream" id=10]
+[ext_resource path="res://resources/zones/test.gd" type="Script" id=11]
+[ext_resource path="res://resources/objects/decorations/dw_middlevar.tscn" type="PackedScene" id=12]
+
+[sub_resource type="ProceduralSky" id=1]
+radiance_size = 0
+sky_top_color = Color( 0.654902, 0.627451, 0.996078, 1 )
+sky_horizon_color = Color( 0.0313726, 0.00784314, 0.32549, 1 )
+sky_curve = 0.372695
+ground_bottom_color = Color( 0.0784314, 0.0509804, 0.235294, 1 )
+ground_horizon_color = Color( 1, 0.792157, 0.654902, 1 )
+sun_color = Color( 0.545098, 0.627451, 0.607843, 1 )
+sun_latitude = 8.97
+sun_longitude = 10.2
+sun_angle_min = 0.0
+sun_angle_max = 26.27
+sun_curve = 0.123114
+sun_energy = 0.56
+texture_size = 0
+
+[sub_resource type="Environment" id=2]
+background_mode = 1
+background_sky = SubResource( 1 )
+background_color = Color( 0.0588235, 0.0509804, 0.164706, 1 )
+ambient_light_color = Color( 0.180392, 0.219608, 0.301961, 1 )
+
+[node name="test" type="Spatial"]
+script = ExtResource( 11 )
+
+[node name="angelspamton" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 5.5, 0 )
+
+[node name="dw_middlemiddle" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, -16 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 2 )
+
+[node name="player" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0 )
+
+[node name="SpotLight" type="SpotLight" parent="player"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 8.5, 0 )
+light_energy = 5.0
+light_indirect_energy = 3.42
+shadow_enabled = true
+shadow_reverse_cull_face = true
+spot_range = 17.0
+spot_angle = 31.0425
+
+[node name="stairs" parent="." instance=ExtResource( 3 )]
+transform = Transform( -5.96046e-08, 0, 1, 0, 1, 0, -1, 0, -5.96046e-08, 4, 2, -8 )
+
+[node name="stairs3" parent="." instance=ExtResource( 3 )]
+transform = Transform( -5.96046e-08, 0, 1, 0, 1, 0, -1, 0, -5.96046e-08, -4, 2, -8 )
+
+[node name="stairs2" parent="." instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2, -8 )
+
+[node name="dw_middle6" parent="." instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -4 )
+
+[node name="dw_middle2" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, -12 )
+
+[node name="dw_middle3" parent="." instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4, 4, -16 )
+
+[node name="ralseiexplode" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 4, 0 )
+
+[node name="dw_corner" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 4, -12 )
+
+[node name="dw_middle4" parent="." instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 4, -36 )
+
+[node name="dw_corner5" parent="." instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4, 4, -36 )
+
+[node name="dw_middlemiddle2" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, -20 )
+
+[node name="dw_middle8" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -4, 4, -20 )
+
+[node name="dw_middlemiddle3" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, -24 )
+
+[node name="dw_middle9" parent="." instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4, 4, -24 )
+
+[node name="dw_middlemiddle4" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, -28 )
+
+[node name="dw_middle12" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -4, 4, -28 )
+
+[node name="dw_middlemiddle5" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, -32 )
+
+[node name="dw_middle13" parent="." instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4, 4, -32 )
+
+[node name="dw_corner6" parent="." instance=ExtResource( 9 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4, 4, -36 )
+
+[node name="dw_corner2" parent="." instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4, 4, -12 )
+
+[node name="dw_corner3" parent="." instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4, 0, 0 )
+
+[node name="dw_corner4" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0 )
+
+[node name="dw_corner7" parent="." instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4, 0, -4 )
+
+[node name="dw_corner8" parent="." instance=ExtResource( 9 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4, 0, -4 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Sprite" type="Sprite" parent="CanvasLayer"]
+
+[node name="Viewport" type="Viewport" parent="."]
+size = Vector2( 1280, 720 )
+transparent_bg = true
+
+[node name="april2012" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+autoplay = true
+
+[node name="rudebuster" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+
+[node name="dw_middlevarient" parent="." instance=ExtResource( 12 )]
+
+[node name="dw_middlevarient2" parent="." instance=ExtResource( 12 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4, 4, -20 )
+
+[node name="dw_middlevarient3" parent="." instance=ExtResource( 12 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4, 4, -28 )
+
+[node name="dw_middlevarient4" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -4, 4, -24 )
+
+[node name="dw_middlevarient5" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -4, 4, -16 )
+
+[node name="dw_middlevarient6" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -4, 4, -32 )
+
+[node name="invisiblewall" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 4, 0, 0, 0, 1, -10, 4, -2 )
+
+[node name="invisiblewall4" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 4, 0, 0, 0, 1, -10, 4, -10 )
+
+[node name="invisiblewall5" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 4, 0, 0, 0, 1, -10, 4, -18 )
+
+[node name="invisiblewall6" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 4, 0, 0, 0, 1, -10, 4, -26 )
+
+[node name="invisiblewall7" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 4, 0, 0, 0, 1, -10, 4, -34 )
+
+[node name="invisiblewall9" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 4, 0, 0, 0, 1, -2, 4, -42 )
+
+[node name="invisiblewall10" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 4, 0, 0, 0, 1, 2, 4, -42 )
+
+[node name="invisiblewall2" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 4, 0, 0, 0, 1, -1, 4, 6 )
+
+[node name="invisiblewall11" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 4, 0, 0, 0, 1, 1, 4, 6 )
+
+[node name="invisiblewall3" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 4, 0, 0, 0, 1, 9, 4, -2 )
+
+[node name="invisiblewall12" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 4, 0, 0, 0, 1, 9, 4, -10 )
+
+[node name="invisiblewall13" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 4, 0, 0, 0, 1, 9, 4, -18 )
+
+[node name="invisiblewall14" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 4, 0, 0, 0, 1, 9, 4, -26 )
+
+[node name="invisiblewall15" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 4, 0, 0, 0, 1, 9, 4, -34 )
+
+[connection signal="talkedboof" from="player" to="." method="_on_player_talkedboof"]
